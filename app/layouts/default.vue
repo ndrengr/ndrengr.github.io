@@ -1,14 +1,17 @@
 <script setup lang="ts">
 useHead({
-	titleTemplate: '%s — Andrengineer'
+	titleTemplate: '%s — Andrengineer',
+	htmlAttrs: { class: 'scroll-smooth' }
 });
 </script>
 
 <template>
 	<UApp>
 		<AppHeader />
-		<UContainer>
+		<main class="min-h-[80dvh]">
 			<slot />
-		</UContainer>
+		</main>
+		<USeparator />
+		<AppFooter />
 	</UApp>
 </template>
