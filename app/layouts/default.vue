@@ -1,11 +1,12 @@
 <script setup lang="ts">
 useHead({
-	titleTemplate: '%s | Andrengineer'
+	titleTemplate: '%s — Andrengineer'
 });
 </script>
 
 <template>
 	<UApp>
+		<AppHeader />
 		<UContainer>
 			<slot />
 		</UContainer>

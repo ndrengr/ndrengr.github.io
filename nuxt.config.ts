@@ -6,7 +6,25 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: []
+    }
+  },
+  content: {
+    build: {
+      markdown: { 
+        toc: { depth: 3 },
+        contentHeading: false,
+        highlight: {
+          theme: { default: 'github-light', dark: 'github-dark' },
+          langs: ['c', 'csharp', 'php', 'java', 'javascript', 'typescript', 'bash', 'html', 'go', 'batch']
+        }
+      },
+    }
+  },
+  ui: {
+    prose: true
   },
   modules: [
     '@nuxt/content',
