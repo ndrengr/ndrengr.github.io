@@ -8,13 +8,13 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
-      include: []
+      include: ['@nuxtjs/mdc/runtime']
     }
   },
   content: {
     build: {
       markdown: { 
-        toc: { depth: 3 },
+        toc: { depth: 3, searchDepth: 2 },
         contentHeading: false,
         highlight: {
           theme: { default: 'github-light', dark: 'github-dark' },

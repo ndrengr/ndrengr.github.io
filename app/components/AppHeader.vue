@@ -5,15 +5,15 @@ const route = useRoute();
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: 'Sobre Mí', to: '/#about', active: false
+    label: 'Sobre Mí', to: '/#about', active: route.fullPath.startsWith('/#about'), class: 'text-md'
   }, {
-    label: 'Habilidades', to: '/#skills', active: false
+    label: 'Habilidades', to: '/#skills', active: route.fullPath.startsWith('/#skills'), class: 'text-md'
   }, {
-    label: 'Proyectos', to: '/#projects', active: false
+    label: 'Proyectos', to: '/#projects', active: route.fullPath.startsWith('/#projects'), class: 'text-md'
   }, {
-    label: 'Blog', to: '/blog', active: route.path.startsWith('/blog')
+    label: 'Blog', to: '/blog', active: route.path.startsWith('/blog'), class: 'text-md'
   }, {
-    label: 'Contacto', to: '/contacto', active: route.path.startsWith('/contacto') 
+    label: 'Contacto', to: '/contacto', active: route.path.startsWith('/contacto'), class: 'text-md'
   }
 ]);
 </script>
