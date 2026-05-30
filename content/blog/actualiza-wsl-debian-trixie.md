@@ -58,7 +58,7 @@ cat os-release
 > 
 > VERSION_CODENAME=trixie
 > 
-> DEBIAN_VERSION_FULL=13.0
+> DEBIAN_VERSION_FULL=13.x
 > 
 > ID=debian
 > 

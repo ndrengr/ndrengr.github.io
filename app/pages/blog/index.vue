@@ -2,7 +2,6 @@
 const { data: posts } = await useAsyncData(
 	'posts', () => queryCollection('blog').order('date', 'DESC').all()
 );
-const { data } = await useAsyncData('search-data', () => queryCollectionSearchSections('blog'));
 
 useSeoMeta({
 	title: 'Blog'

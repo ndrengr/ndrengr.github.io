@@ -22,25 +22,25 @@ useSeoMeta({
       <h3 class="text-4xl">Habilidades Técnicas</h3>
       <UCard title="Lenguajes" class="w-full mt-4">
         <div class="flex gap-2">
-          <UBadge color="neutral" variant="soft" label="TypeScript" />
-          <UBadge color="neutral" variant="soft" label="Python" />
           <UBadge color="neutral" variant="soft" label="Java" />
           <UBadge color="neutral" variant="soft" label="C#" />
           <UBadge color="neutral" variant="soft" label="SQL" />
+          <UBadge color="neutral" variant="soft" label="TypeScript" />
+          <UBadge color="neutral" variant="soft" label="Python" />
         </div>
       </UCard>
       <UCard title="Frameworks y Entornos" class="w-full my-4">
         <div class="flex gap-2">
           <UBadge color="neutral" variant="soft" label="Nuxt" />
-          <UBadge color="neutral" variant="soft" label="Laravel" />
           <UBadge color="neutral" variant="soft" label=".Net Core" />
+          <UBadge color="neutral" variant="soft" label="Laravel" />
         </div>
       </UCard>
       <UCard title="Herramientas y DevOps" class="w-full">
         <div class="flex gap-2">
+          <UBadge color="neutral" variant="soft" label="WSL" />
           <UBadge color="neutral" variant="soft" label="Git" />
           <UBadge color="neutral" variant="soft" label="Docker" />
-          <UBadge color="neutral" variant="soft" label="WSL" />
         </div>
       </UCard>
     </UContainer>

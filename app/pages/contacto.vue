@@ -20,7 +20,7 @@ type Schema = z.infer<typeof schema>
 async function handleSubmit(event: FormSubmitEvent<Schema>) {
   isSubmitting.value = true
   try {
-    const response = await $fetch('https://formspree.io/f/xbdbbwoo', {
+    await $fetch('https://formspree.io/f/xbdbbwoo', {
       method: 'POST',
       body: event.data
     })
@@ -36,12 +36,13 @@ async function handleSubmit(event: FormSubmitEvent<Schema>) {
 
 <template>
 	<UContainer>
-		<UForm :schema="schema" :state="state" @submit="handleSubmit" class="mt-10 space-y-4 flex flex-col items-center">
+		<p class="text-center my-8">Para contactarme, puedes usar el siguiente formulario y responderé en el menor tiempo posible:</p>
+		<UForm :schema="schema" :state="state" @submit="handleSubmit" class="space-y-4 flex flex-col items-center">
 			<UFormField label="Email" name="email" required class="w-fit">
-				<UInput v-model="state.email" type="email" class="w-3xl" />
+				<UInput v-model="state.email" type="email" class="w-sm" />
 			</UFormField>
 			<UFormField label="Message" name="message" required class="w-fit">
-				<UTextarea v-model="state.message" class="w-3xl" />
+				<UTextarea v-model="state.message" :rows="6" class="w-sm" />
 			</UFormField>
 			<UButton type="submit" :loading="isSubmitting" class="w-fit" icon="i-lucide-mail">Enviar</UButton>
 		</UForm>
