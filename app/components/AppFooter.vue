@@ -5,7 +5,7 @@ const year: number = new Date().getFullYear();
 <template>
 	<UFooter>
 		<p class="p-8 text-sm">
-			&copy; {{ year }} Andrengineer. Desarrollado bajo estándares modernos de Ingeniería de Software.
+			&copy; {{ year }} Andrengineer.
 		</p>
 	</UFooter>
 </template>

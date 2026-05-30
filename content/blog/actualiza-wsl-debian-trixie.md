@@ -5,6 +5,7 @@ image: '/blog/wsl-trixie.jpg'
 date: 2025-08-13
 tags: ['debian', 'trixie', 'wsl', 'guia']
 ---
+
 # Guía rápida para actualizar Debian 12 a Debian 13 en WSL
 
 Con la salida oficial de Debian 13 Trixie, y para los que usamos [WSL](https://learn.microsoft.com/es-es/windows/wsl/), les presento esta guía para actualizar a la versión 13 desde la 12 instalada en WSL:

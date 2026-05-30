@@ -9,11 +9,7 @@ if(data.value === null)
     message: 'La entrada no se encuentra',
     statusMessage: 'Página no encontrada',
   })
-// const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-//   return queryCollectionItemSurroundings('blog', route.path, {
-//     fields: ['description']
-//   })
-// });
+
 useSeoMeta({
 	title: data.value.title,
   description: data.value.description,
@@ -23,7 +19,6 @@ useSeoMeta({
 
 <template>
   <UContainer>
-    <ContentRenderer :value="data.body" />
-    <!-- <UContentSurround :surround="surround" /> -->
+    <ContentRenderer :value="data.body" class="mt-8" />
   </UContainer>
 </template>

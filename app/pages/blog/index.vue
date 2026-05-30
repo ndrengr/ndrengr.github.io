@@ -11,7 +11,7 @@ useSeoMeta({
 
 <template>
 	<UContainer>
-		<UBlogPosts orientation="vertical" class="py-8">
+		<UBlogPosts orientation="horizontal" class="py-8">
 			<UBlogPost v-for="(post, index) in posts" :key="index" v-bind="post" :to="post.path" />
 		</UBlogPosts>
 	</UContainer>
